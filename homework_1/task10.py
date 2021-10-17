@@ -8,9 +8,8 @@ uporządkowaną listę wspólnych liter z lańcuchów string1 i string2.
 Oba napisy będą składać się wyłacznie z małych liter.
 """
 
-
 def common_chars(string1, string2):
-    pass
+    return sorted(set(string1.lower().replace(' ', '')) & set(string2.lower().replace(' ', '')))
 
 
 input1 = "this is a string"
