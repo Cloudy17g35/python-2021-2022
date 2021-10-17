@@ -7,7 +7,8 @@ która zawiera tylko elementy z list o parzystych indeksach.
 """
 
 def even_elements(lista):
-    pass
+
+    return [lista[i] for i in range(len(lista)) if i % 2 == 0]
 
 
 input = [1, 2, 3, 4, 5, 6]
